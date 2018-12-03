@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CommunityDialog.Community_Fragment_Dialog">
+
+    <ImageView
+        android:id="@+id/communityImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/img"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/communityTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:text="@string/communityTitle"/>
+
+    <TextView
+        android:id="@+id/communityCoordinator"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/communityTitle"
+        android:layout_marginStart="120dp"
+        android:text="@string/communityCoordinator" />
+
+    <TextView
+        android:id="@+id/communityTopic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/communityCoordinator"
+        android:layout_marginStart="120dp"
+        android:text="@string/communityTopic" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/communityTopic"
+        tools:openDrawer="start">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <TextView
+        android:id="@+id/descriptionTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/descriptionText"/>
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/communityDescription"
+        android:layout_below="@id/descriptionTitle" />
+
+</RelativeLayout>
